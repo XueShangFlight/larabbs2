@@ -28,7 +28,7 @@ class ImageUploadHandler
 
         //拼接文件名，加前缀是为了增加辨析度，前缀可以是相关数据模型的ID
         //值如：1_1493521054-gdh4454gdg.png
-        $filename = $file_prefix.'_'.time().'_'.Str::random(10).'_'.$extension;
+        $filename = $file_prefix.'_'.time().'_'.Str::random(10).'.'.$extension;
 
         //如果上传的不是图片将终止操作
         if(!in_array($extension,$this->allowed_ext)){
