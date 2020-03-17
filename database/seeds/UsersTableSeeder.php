@@ -43,7 +43,7 @@ class UsersTableSeeder extends Seeder
         $user = User::find(1);
         $user->name = 'xueshang';
         $user->email = '1206324968@qq.com';
-        $user->avatar = 'https://b-ssl.duitang.com/uploads/item/201410/09/20141009224754_AswrQ.jpeg';
+        $user->avatar = 'http://larabbs.test/uploads/images/avatars/202003/17/1_1584431754_NGXoi5lMpa.jpg';
         $user->introduction = '生活不只有眼前的苟且，还有诗和远方！';
         $user->save();
     }

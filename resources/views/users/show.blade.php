@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="col-lg-9 col-md-9 col-sm-12 col-xl-12">
+    <div class="col-lg-9 col-md-9 col-sm-12 col-xl-9">
       <div class="card">
         <div class="card-body">
           <h1 class="mb-0" style="font-size: 22px;">
