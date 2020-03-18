@@ -9,6 +9,7 @@
   <title>
     @yield('title','LaraBBS')-Laravel 进阶教程-XueShangFlight
   </title>
+  <meta name="description" content="@yield('description','LaraBBS xueshang论坛|xueshang社区')">
   <!-- Styles-->
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
