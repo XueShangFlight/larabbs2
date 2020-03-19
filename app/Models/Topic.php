@@ -4,7 +4,12 @@ namespace App\Models;
 
 class Topic extends Model
 {
-    protected $fillable = ['title', 'body', 'user_id', 'category_id', 'excerpt', 'slug'];
+    protected $fillable = ['title', 'body', 'category_id', 'excerpt', 'slug'];
+
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
 
     public function category()
     {
@@ -14,11 +19,6 @@ class Topic extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
-    }
-
-    public function replies()
-    {
-        return $this->hasMany(Reply::class);
     }
 
     public function scopeWithOrder($query, $order)
