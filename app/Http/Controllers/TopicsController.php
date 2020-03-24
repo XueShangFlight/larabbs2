@@ -29,6 +29,7 @@ class TopicsController extends Controller
     {
         //url 矫正
         if(!empty($topic->slug) && ($topic->slug != $request->slug)){
+            session()->reflash();
             return redirect($topic->link(),301);
         }
         return view('topics.show', compact('topic'));
