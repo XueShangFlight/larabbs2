@@ -46,5 +46,12 @@ class UsersTableSeeder extends Seeder
         $user->avatar = 'http://larabbs.test/uploads/images/avatars/202003/17/1_1584431754_NGXoi5lMpa.jpg';
         $user->introduction = '生活不只有眼前的苟且，还有诗和远方！';
         $user->save();
+
+        //初始化用户角色，将1号用户指派为【站长】
+        $user->assignRole('Founder');
+
+        //将2号用户指派为【管理员】
+        $user = User::find(2);
+        $user->assignRole('Maintainer');
     }
 }
