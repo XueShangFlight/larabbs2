@@ -7,9 +7,10 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>
-    @yield('title','LaraBBS')-Laravel 进阶教程-XueShangFlight
+    @yield('title','LaraBBS')-{{ setting('site_name','Laravel 进阶教程-XueShangFlight') }}
   </title>
-  <meta name="description" content="@yield('description','LaraBBS xueshang论坛|xueshang社区')">
+  <meta name="description" content="@yield('description',setting('seo_description','LaraBBS xueshang论坛|xueshang社区'))">
+  <meta name="keyword" content="@yield('keyword',setting('seo_keyword','LaraBBS,社区，论坛，开发者论坛'))">
   <!-- Styles-->
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
